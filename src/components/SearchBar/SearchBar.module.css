@@ -1,0 +1,81 @@
+.header {
+  background-color: rgb(6, 4, 20);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  pointer-events: none;
+  z-index: 10;
+}
+.form {
+  pointer-events: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 8px;
+  margin-top: 0;
+  padding: 20px 0;
+}
+.input {
+  font-size: 18px;
+  outline: none;
+  height: 60px;
+  padding: 0;
+  width: 320px;
+  margin-right: 2px;
+  box-sizing: border-box;
+  padding: 8px;
+  border: 1px solid rgb(146, 148, 248);
+  transition: box-shadow 0.25s;
+  background-color: rgba(125, 125, 153, 0.2);
+  color: white;
+}
+.input:hover,
+.input:focus {
+  box-shadow: 1px 1px 10px 5px rgba(146, 148, 248, 0.4);
+}
+.input::placeholder {
+  color: rgb(189, 187, 187);
+}
+.btn {
+  height: 60px;
+  width: 150px;
+  text-transform: uppercase;
+  color: rgb(228, 225, 225);
+  border: 1px solid rgb(146, 148, 248);
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  transition: box-shadow 0.25s;
+  letter-spacing: 2px;
+}
+
+.btn:hover,
+.btn:focus {
+  box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+}
+.btn:focus {
+  outline: none;
+}
+.btnDisabled {
+  height: 60px;
+  width: 150px;
+  text-transform: uppercase;
+  color: rgb(228, 225, 225);
+  border: 1px solid rgb(83, 83, 87);
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  transition: box-shadow 0.25s;
+  letter-spacing: 2px;
+  background-color: rgba(195, 195, 202, 0.2);
+}
