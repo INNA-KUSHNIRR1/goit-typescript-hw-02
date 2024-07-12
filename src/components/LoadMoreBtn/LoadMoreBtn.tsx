@@ -1,8 +1,12 @@
-import style from "./LoadMoreBtn.module.css";
+import { FC } from 'react';
+import style from './LoadMoreBtn.module.css';
 
-const LoadMoreBtn = ({ onClick }) => {
+interface LoadMoreBtnProps {
+  onClick: () => void;
+}
+const LoadMoreBtn: FC<LoadMoreBtnProps> = ({ onClick }) => {
   return (
-    <button type="click" className={style.btn} onClick={onClick}>
+    <button type="submit" className={style.btn} onClick={onClick}>
       Load more
     </button>
   );

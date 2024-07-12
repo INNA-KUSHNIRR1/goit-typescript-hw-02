@@ -1,6 +1,15 @@
-import style from "./ImageCard.module.css";
+import style from './ImageCard.module.css';
+import { FC } from 'react';
 
-const ImageCard = ({
+interface ImageCardProps {
+  alt: string;
+  srcSmall: string;
+  likes: number;
+  author: string;
+  srcModal: string;
+  onImageClick: (likes: number, author: string, srcModal: string) => void;
+}
+const ImageCard: FC<ImageCardProps> = ({
   likes,
   author,
   srcModal,

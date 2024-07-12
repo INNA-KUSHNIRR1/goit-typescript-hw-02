@@ -9,10 +9,12 @@
   margin-bottom: 20px;
   padding-top: 140px;
 }
-.card {
-  border: 1px solid rgb(170, 169, 172);
-  transition: transform 350ms ease-in-out;
+/* .card {
+  padding: 5px;
+  background-color: rgb(223, 227, 235);
+  /* border: 1px solid rgb(170, 169, 172);
+  transition: all 350ms ease-in-out;
 }
 .card:hover {
   transform: scale(1.02);
-}
+} */
